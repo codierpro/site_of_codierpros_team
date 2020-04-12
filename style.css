@@ -3,8 +3,7 @@ body, h1, p, span{
 }
 
 html {
-    width: 1920px;
-    overflow: hidden;
+    width: 100%;
     margin: 0;
 }
 
@@ -15,16 +14,15 @@ html {
 }
 
 .header {
-    width: 1920px;
+    width: 100%;
     height: 1080px;
     left: 0px;
-    background: url(images/header_background.png);
-    overflow: hidden;
+    background: url(images/header_background.png);  
 }
 
 .smoke {
     position: absolute;
-    width: 1920px;
+    width: 100%;
     height: 1080px;
     left: 0px;
     background: url(images/smoke1.png);
@@ -69,7 +67,7 @@ html {
 }
 
 .main_left_side {
-    width: 960px;
+    width: 50%;
     height: 1080px;
     left: 0px;
     top: 1080px;
@@ -78,7 +76,7 @@ html {
 }
 
 .main_right_side {
-    width: 960px;
+    width: 50%;
     height: 1080px;
     left: 0px;
     top: 1080px;
