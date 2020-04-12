@@ -85,3 +85,21 @@ html {
     background: url(images/need_a_website_black.png) no-repeat;
     float: left;
 }
+
+.main h2{
+    position: relative;
+    text-align: center;
+    top: 68.5%;
+
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 73px;
+    
+}
+
+.main a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
