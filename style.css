@@ -2,6 +2,12 @@ body, h1, p, span{
     margin: 0;
 }
 
+html {
+    width: 1920px;
+    /*overflow: hidden;*/
+    margin: 0;
+}
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url('fonts/ProximaNovaThin/ProximaNovaT-Thin.eot');
@@ -9,11 +15,10 @@ body, h1, p, span{
 }
 
 .header {
-    position: absolute;
     width: 1920px;
     height: 1080px;
     left: 0px;
-    background: url(images/main_background.png);
+    background: url(images/header_background.png);
     overflow: hidden;
 }
 
@@ -61,4 +66,22 @@ body, h1, p, span{
     left: 1336px;
     top: 258px;
     border: 1px solid #FF5A5A;
+}
+
+.main_left_side {
+    width: 960px;
+    height: 1080px;
+    left: 0px;
+    top: 1080px;
+    background: url(images/be_a_member_black.png);
+    float: left;
+}
+
+.main_right_side {
+    width: 960px;
+    height: 1080px;
+    left: 0px;
+    top: 1080px;
+    background: url(images/need_a_website_black.png);
+    float: right;
 }
