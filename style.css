@@ -2,6 +2,12 @@ body, h1, p, span{
     margin: 0;
 }
 
+html {
+    width: 1920px;
+    overflow: hidden;
+    margin: 0;
+}
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url('fonts/ProximaNovaThin/ProximaNovaT-Thin.eot');
@@ -13,7 +19,7 @@ body, h1, p, span{
     width: 1920px;
     height: 1080px;
     left: 0px;
-    background: url(images/main_background.png);
+    background: url(images/header_background.png);
     overflow: hidden;
 }
 
@@ -62,3 +68,4 @@ body, h1, p, span{
     top: 258px;
     border: 1px solid #FF5A5A;
 }
+g
