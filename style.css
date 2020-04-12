@@ -13,11 +13,70 @@ html {
     src: url('fonts/ProximaNovaThin/ProximaNovaT-Thin.ttf') format('truetype');
 }
 
+
 .header {
     width: 100%;
     height: 1080px;
     left: 0px;
     background: url(images/header_background.png) no-repeat;  
+    background-size: 100%;
+}
+
+.header h1 {
+    position: relative;
+    left: 62%;
+    top: 111px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 250;
+    font-size: 100px;
+    line-height: 122px;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1920px) {
+    .header h1 {
+        left: 62%;
+        top: 111px;
+        font-size: 100px;
+        line-height: 122px;
+    }
+}
+
+@media screen and (max-width: 1660px) {   
+    .header h1 {
+        left: 61%;
+        top: 80px;
+        font-size: 85px;
+        line-height: 122px;
+    }
+}
+
+@media screen and (max-width: 1440px) {   
+    .header h1 {
+        left: 61%;
+        top: 70px;
+        font-size: 75px;
+        line-height: 122px;
+    }
+}
+
+@media screen and (max-width: 1366px) {   
+    .header h1 {
+        left: 62%;
+        top: 65px;
+        font-size: 65px;
+        line-height: 122px;
+    }
+}
+
+@media screen and (max-width: 1281px) {   
+    .header h1 {
+        left: 62%;
+        top: 55px;
+        font-size: 50px;
+        line-height: 122px;
+    }
 }
 
 .main, .header, .smoke{
@@ -29,28 +88,13 @@ html {
     width: 100%;
     height: 1080px;
     background: url(images/smoke1.png) no-repeat;
-}
-
-.header h1 {
-    position: absolute;
-    width: 536px;
-    height: 122px;
-    left: 1170px;
-    top: 111px;
-    font-family: Proxima Nova;
-    font-style: normal;
-    font-weight: 250;
-    font-size: 100px;
-    line-height: 122px;
-    color: #FFFFFF;
+    background-size: 100%;
 }
 
 .header p {
-    position: absolute;
-    width: 145px;
-    height: 30px;
-    left: 1365px;
-    top: 221px;
+    position: relative;
+    top: 100px;
+    left: 71%;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 250;
@@ -59,13 +103,97 @@ html {
     color: #FFFFFF;
 }
 
+@media screen and (max-width: 1920px) {   
+    .header p {
+        top: 100px;
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1660px) {   
+    .header p {
+        top: 54px;
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 1440px) {   
+    .header p {
+        top: 45px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1366px) {   
+    .header p {
+        top: 32px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1281px) {  
+    .header p {
+        top: 15px;
+        font-size: 15px;
+    }
+}
+
 .header span {
-    position: absolute;
+    position: relative;
     width: 204px;
-    height: 0px;
-    left: 1336px;
-    top: 258px;
+    left: 70%;
+    top: 100px;
     border: 1px solid #FF5A5A;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1920px) {   
+    .header span {
+        top: 96px;
+        left: 69.4%;
+    }
+}
+
+@media screen and (max-width: 1660px) {   
+    .header span {
+        top: 48px;
+        left: 68.3%;
+    }
+}
+
+@media screen and (max-width: 1440px) {   
+    .header span {
+        top: 38px;
+        left: 67%;
+    }
+}
+
+@media screen and (max-width: 1366px) {   
+    .header span {
+        top: 23px;
+        left: 67%;
+    }
+}
+
+@media screen and (max-width: 1281px) {  
+    .header span {
+        top: 3px;
+        left: 66.5%;
+    }
+}
+
+@media screen and (max-width: 1200px) {  
+    .header span {
+        top: 3px;
+        left: 65.5%;
+    }
+}
+
+@media screen and (max-width: 990px) {  
+    .header span {
+        top: 3px;
+        left: 64.5%;
+    }
 }
 
 .main_left_side {
@@ -166,4 +294,24 @@ html {
     line-height: 61px;
     text-align: center;  
     color: #FFFFFF;
+}
+
+button.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 59px;
+    width: 59px;
+    bottom: 53px;
+    background-color: transparent;
+    border: solid #FFFFFF; 
+    border-width: 0 2px 2px 0;
+    cursor: pointer;
+    outline: none;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    display: inline-block;
+    padding: 3px;
 }
