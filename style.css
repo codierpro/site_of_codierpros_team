@@ -4,7 +4,7 @@ body, h1, p, span{
 
 html {
     width: 1920px;
-    /*overflow: hidden;*/
+    overflow: hidden;
     margin: 0;
 }
 
