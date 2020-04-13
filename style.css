@@ -378,7 +378,7 @@ button.h2_scroll_down {
     .main h2, .main_2 .bottom_h2 { font-size: 43px; }
     .main_2 p {
         font-size: 33px;
-        line-height: 45px;
+        line-height: 38px;
     }
 }  
 @media screen and (max-width: 1280px)  {
