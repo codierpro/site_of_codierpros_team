@@ -35,7 +35,7 @@
     <div class="main_2">
         <div class="main_left_side_2">
             <div class="gray_background">
-                <h2 id="frame2"><a href="#">I want to be a member</a></h2>
+                <h2 id="frame2_1">I want to be a member</h2>
                 <p>
                     You need: <br>
                     Internet and PC (laptop) <br>
@@ -51,10 +51,37 @@
                 </p>
             </div>
         </div>
-        <div class="main_right_side_3">
-            <h2 id="frame3" class="bottom_h2"><a href="#">I need a website</a></h2>
+        <div class="main_right_side_2">
+            <h2 id="frame2_2" class="bottom_h2">I need a website</h2>
         </div>
-    </div>   
+    </div>  
+    <div class="main_3">
+        <div class="main_left_side_3">
+            <h2 class="bottom_h2">
+                <button type="button" class="h2_scroll_down" id="frame3_1">
+                    I want to be a member
+                </button>
+            </h2>
+        </div>
+        <div class="main_right_side_3">
+            <h2>
+                <button type="button" class="h2_scroll_down" id="frame3_2">
+                    I need a website
+                </button>
+            </h2>
+                <p>
+                    What can we make: <br>
+                    Landing page <br>
+                    Interner-shop <br>
+                    Edits for website <br>
+                    Site for school <br>
+                    Card site <br>
+                    Optimization <br>
+                    Web-application <br>
+                </p>
+        </div>
+    </div>  
+
     <div class="footer"></div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -65,8 +92,10 @@
             'use strict';
         
             var btnScrollDown = document.querySelector('#scroll_down');
-            var aScrollDown = document.querySelector('#frame1_1');
-            var aScrollDown2 = document.querySelector('#frame1_2');
+            var aScrollDown1_1 = document.querySelector('#frame1_1');
+            var aScrollDown1_2 = document.querySelector('#frame1_2');
+            var aScrollDown2_2 = document.querySelector('#frame2_2');
+            var aScrollDown3_1 = document.querySelector('#frame3_1');
         
             function scrollDown() {
                 var windowCoords = document.documentElement.clientHeight;
@@ -81,12 +110,40 @@
                     // }
                 })();
             };
-            function scrollDown2() {
-                var windowCoords2 = document.documentElement.clientHeight;
-                windowCoords2 *= 2;
+            function scrollDown1_1() {
+                var windowCoords1_1 = document.documentElement.clientHeight;
+                windowCoords1_1 *= 2;
                 
                 (function scroll() {
-                    if (window.pageYOffset < windowCoords2) {
+                    if (window.pageYOffset < windowCoords1_1) {
+                        window.scrollBy(0, 10);
+                        setTimeout(scroll, 4);
+                    }
+                    // if (window.pageYOffset > windowCoords) {
+                    //     window.scrollTo(0, windowCoords);
+                    // }
+                })();
+            };
+            function scrollDown1_2() {
+                var windowCoords1_2 = document.documentElement.clientHeight;
+                windowCoords1_2 *= 3;
+                
+                (function scroll() {
+                    if (window.pageYOffset < windowCoords1_2) {
+                        window.scrollBy(0, 15);
+                        setTimeout(scroll, 4);
+                    }
+                    // if (window.pageYOffset > windowCoords) {
+                    //     window.scrollTo(0, windowCoords);
+                    // }
+                })();
+            };
+            function scrollDown2_2() {
+                var windowCoords2_2 = document.documentElement.clientHeight;
+                windowCoords2_2 *= 3;
+                
+                (function scroll() {
+                    if (window.pageYOffset < windowCoords2_2) {
                         window.scrollBy(0, 10);
                         setTimeout(scroll, 4);
                     }
@@ -96,9 +153,27 @@
                 })();
             };
         
+            function scrollDown3_1() {
+                var windowCoords3_1 = document.documentElement.clientHeight;
+                windowCoords3_1 *= 2;
+                
+                (function scroll() {
+                    if (window.pageYOffset > windowCoords3_1) {
+                        window.scrollBy(0, -10);
+                        setTimeout(scroll, 4);
+                    }
+                    
+                    // if (window.pageYOffset > windowCoords3_1) {
+                    //     window.scrollTo(0, windowCoords3_1);
+                    // }
+                })();
+            };
+        
             btnScrollDown.addEventListener('click', scrollDown);
-            aScrollDown.addEventListener('click', scrollDown2);
-            aScrollDown2.addEventListener('click', scrollDown2);
+            aScrollDown1_1.addEventListener('click', scrollDown1_1);
+            aScrollDown1_2.addEventListener('click', scrollDown1_2);
+            aScrollDown2_2.addEventListener('click', scrollDown2_2);
+            aScrollDown3_1.addEventListener('click', scrollDown3_1);
         })();
     </script>
 </body>

@@ -292,7 +292,9 @@ button.h2_scroll_down {
     }
 }
 /***************************************************************************************************/
-.main_left_side, .main_right_side, .main_left_side_2, .main_right_side_3  {
+.main_left_side, .main_right_side,
+.main_left_side_2, .main_right_side_2,
+.main_left_side_3, .main_right_side_3 {
     width: 50%;
     height: 100vh;
     float: left;
@@ -310,7 +312,7 @@ button.h2_scroll_down {
 }
 
 /****************************************************************************************************/
-.main h2, .main_2 .bottom_h2 {
+.main h2, .main_2 .bottom_h2, .main_3 h2 {
     position: relative;
     text-align: center;
     top: 68.5%;
@@ -333,7 +335,7 @@ button.h2_scroll_down {
 }
 
 
-.main_2 p {  
+.main_2 p, .main_3 p {  
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 300;
@@ -346,14 +348,14 @@ button.h2_scroll_down {
 }
 
 @media screen and (min-width: 1920px)  {
-    .main h2, .main_2 .bottom_h2, #frame2 { font-size: 75px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1 { font-size: 75px; }
     .main_2 p {
         font-size: 55px;
         bottom: -6%;
     }
 }  
 @media screen and (max-width: 1920px)  {
-    .main h2, .main_2 .bottom_h2, #frame2 { font-size: 60px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1 { font-size: 60px; }
     .main_2 p {
         font-size: 50px;
         line-height: 60px;
@@ -404,17 +406,19 @@ button.h2_scroll_down {
 } 
 /****************************************************************************************************/
 
-.main_right_side_3 a {
+.main_right_side_2 h2 {
     filter: blur(2px);
+    cursor: pointer;
 }
 
-.main_right_side_3 a:hover {
+.main_right_side_2 h2:hover {
     filter: blur(0px);
 }
 
-.main a, .main_2 a{
+.main h2, .main_2 h2{
     color: #FFFFFF;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .main_left_side_2 {
@@ -422,11 +426,11 @@ button.h2_scroll_down {
     background-size: cover;
 }
 
-.main_right_side_3 {
+.main_right_side_2 {
     position: relative;
 }
 
-.main_right_side_3::before {
+.main_right_side_2::before {
     content: '';
     position: absolute; /* Фиксируем на одном месте */
     left: 0; right: 0; /* Вся ширин */
@@ -443,4 +447,14 @@ button.h2_scroll_down {
     height: 100vh;
     background: rgba(0, 0, 0, 0.4);
     float: left;
+}
+
+.main_left_side_3 {
+    background: url(images/be_a_member2.png) no-repeat;
+    background-size: cover;
+}
+
+.main_right_side_3 {
+    background: url(images/need_a_website_black.png) no-repeat center;
+    background-size: cover;
 }
