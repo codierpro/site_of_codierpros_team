@@ -50,7 +50,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
     <script>
         (function() {
             'use strict';
@@ -62,12 +62,12 @@
                 console.log(windowCoords);
                 
                 (function scroll() {
-                    if (window.pageYOffset < 1380) {
+                    if (window.pageYOffset < windowCoords) {
                     window.scrollBy(0, 10);
                     setTimeout(scroll, 4);
                     }
-                if (window.pageYOffset > 1380) {
-                    window.scrollTo(0, 1380);
+                if (window.pageYOffset > windowCoords) {
+                    window.scrollTo(0, windowCoords);
                 }
             })();
         }
