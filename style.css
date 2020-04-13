@@ -26,8 +26,7 @@ html {
     height: 100vh;   
 }
 
-@media (min-aspect-ratio: 21/9) and 
-       (min-aspect-ratio: 16/10) and 
+@media (min-aspect-ratio: 16/10) and 
        (min-aspect-ratio: 16/9) and
        (min-aspect-ratio: 15/10) and
        (min-aspect-ratio: 15/9) and
