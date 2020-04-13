@@ -179,6 +179,8 @@ html {
     }
 }
 
+/*******************************************************************************************/
+
 .header span {
     position: relative;
     width: 204px;
@@ -237,6 +239,86 @@ html {
     }
 }
 
+/******************************************************************************************/
+
+button.scroll_down {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 59px;
+    width: 59px;
+    bottom: 53px;
+    background-color: transparent;
+    border: solid #FFFFFF; 
+    border-width: 0 2px 2px 0;
+    cursor: pointer;
+    outline: none;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    display: inline-block;
+    padding: 3px;
+}
+
+
+@media screen and (max-width: 1920px) {
+    button.scroll_down {
+        top: 890px;
+        height: 46px;
+        width: 46px;
+    }
+}
+
+@media screen and (max-width: 1660px) {   
+    button.scroll_down {
+        top: 760px;
+        height: 46px;
+        width: 46px;
+    }
+}
+
+@media screen and (max-width: 1440px) {   
+    button.scroll_down {
+        top: 630px;
+        height: 46px;
+        width: 46px;
+    }
+}
+
+@media screen and (max-width: 1366px) {   
+    button.scroll_down {
+        top: 560px;
+        height: 46px;
+        width: 46px;
+    }
+}
+
+@media screen and (max-width: 1279px) {   
+    button.scroll_down {
+        top: 458px;
+        height: 42px;
+        width: 42px;
+    }
+}
+
+@media screen and (max-width: 959px) {   
+    button.scroll_down {
+        top: 333px;
+        height: 38px;
+        width: 38px;
+    }
+}
+
+@media screen and (max-width: 719px) {   
+    button.scroll_down {
+        top: 220px;
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/***************************************************************************************************/
 .main_left_side {
     width: 50%;
     max-width: 960px;
@@ -335,24 +417,4 @@ html {
     line-height: 61px;
     text-align: center;  
     color: #FFFFFF;
-}
-
-button.scroll_down {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    height: 59px;
-    width: 59px;
-    bottom: 53px;
-    background-color: transparent;
-    border: solid #FFFFFF; 
-    border-width: 0 2px 2px 0;
-    cursor: pointer;
-    outline: none;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    display: inline-block;
-    padding: 3px;
 }
