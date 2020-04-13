@@ -24,7 +24,7 @@ html {
 
 @media screen and (min-width: 1920px) {
     .header, .smoke {
-        height: 1070px;
+        height: 1080px;
     }
 }
 
@@ -264,25 +264,25 @@ button.scroll_down {
 
 @media screen and (max-width: 1920px) {
     button.scroll_down {
-        top: 890px;
-        height: 46px;
-        width: 46px;
+        top: 840px;
+        height: 59x;
+        width: 59px;
     }
 }
 
 @media screen and (max-width: 1660px) {   
     button.scroll_down {
-        top: 760px;
-        height: 46px;
-        width: 46px;
+        top: 690px;
+        height: 55px;
+        width: 55px;
     }
 }
 
 @media screen and (max-width: 1440px) {   
     button.scroll_down {
         top: 630px;
-        height: 46px;
-        width: 46px;
+        height: 50x;
+        width: 50px;
     }
 }
 
