@@ -84,7 +84,20 @@
         </div>
     </div>  
 
-    <div class="footer"></div>
+    <div class="footer_1">
+            <div class="smoke">
+                <h1>CODIERPRO</h1>
+                <p>web-dev club</p>
+                <span></span>
+            </div>
+    </div>
+    <div class="footer_2">
+        <div class="smoke">
+            <h1>CODIERPRO</h1>
+            <p>web-dev club</p>
+            <span></span>
+        </div>
+    </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -98,6 +111,8 @@
             var aScrollDown1_2 = document.querySelector('#frame1_2');
             var aScrollDown2_2 = document.querySelector('#frame2_2');
             var aScrollDown3_1 = document.querySelector('#frame3_1');
+            var aScrollDown2_1 = document.querySelector('#frame2_1');
+            var aScrollDown3_2 = document.querySelector('#frame3_2');
         
             function scrollDown() {
                 var windowCoords = document.documentElement.clientHeight;
@@ -107,9 +122,9 @@
                         window.scrollBy(0, 10);
                         setTimeout(scroll, 4);
                     }
-                    // if (window.pageYOffset > windowCoords) {
-                    //     window.scrollTo(0, windowCoords);
-                    // }
+                     if (window.pageYOffset > windowCoords) {
+                         window.scrollTo(0, windowCoords);
+                    }
                 })();
             };
             function scrollDown1_1() {
@@ -121,9 +136,9 @@
                         window.scrollBy(0, 10);
                         setTimeout(scroll, 4);
                     }
-                    // if (window.pageYOffset > windowCoords) {
-                    //     window.scrollTo(0, windowCoords);
-                    // }
+                    if (window.pageYOffset > windowCoords1_1) {
+                        window.scrollTo(0, windowCoords1_1);
+                    }
                 })();
             };
             function scrollDown1_2() {
@@ -135,9 +150,23 @@
                         window.scrollBy(0, 15);
                         setTimeout(scroll, 4);
                     }
-                    // if (window.pageYOffset > windowCoords) {
-                    //     window.scrollTo(0, windowCoords);
-                    // }
+                    if (window.pageYOffset > windowCoords1_2) {
+                        window.scrollTo(0, windowCoords1_2);
+                    }
+                })();
+            };
+            function scrollDown2_1() {
+                var windowCoords2_1 = document.documentElement.clientHeight;
+                windowCoords2_1 *= 4;
+                
+                (function scroll() {
+                    if (window.pageYOffset < windowCoords2_1) {
+                        window.scrollBy(0, 10);
+                        setTimeout(scroll, 4);
+                    }
+                    if (window.pageYOffset > windowCoords2_1) {
+                        window.scrollTo(0, windowCoords2_1);
+                    }
                 })();
             };
             function scrollDown2_2() {
@@ -149,9 +178,9 @@
                         window.scrollBy(0, 10);
                         setTimeout(scroll, 4);
                     }
-                    // if (window.pageYOffset > windowCoords) {
-                    //     window.scrollTo(0, windowCoords);
-                    // }
+                    if (window.pageYOffset > windowCoords2_2) {
+                        window.scrollTo(0, windowCoords2_2);
+                    }
                 })();
             };
         
@@ -165,9 +194,23 @@
                         setTimeout(scroll, 4);
                     }
                     
-                    // if (window.pageYOffset > windowCoords3_1) {
-                    //     window.scrollTo(0, windowCoords3_1);
-                    // }
+                    if (window.pageYOffset < windowCoords3_1) {
+                        window.scrollTo(0, windowCoords3_1);
+                    }
+                })();
+            };
+            function scrollDown3_2() {
+                var windowCoords3_2 = document.documentElement.clientHeight;
+                windowCoords3_2 *= 5;
+                
+                (function scroll() {
+                    if (window.pageYOffset < windowCoords3_2) {
+                        window.scrollBy(0, 10);
+                        setTimeout(scroll, 4);
+                    }
+                    if (window.pageYOffset > windowCoords3_2) {
+                        window.scrollTo(0, windowCoords3_2);
+                    }
                 })();
             };
         
@@ -176,6 +219,8 @@
             aScrollDown1_2.addEventListener('click', scrollDown1_2);
             aScrollDown2_2.addEventListener('click', scrollDown2_2);
             aScrollDown3_1.addEventListener('click', scrollDown3_1);
+            aScrollDown2_1.addEventListener('click', scrollDown2_1);
+            aScrollDown3_2.addEventListener('click', scrollDown3_2);
         })();
     </script>
 </body>
