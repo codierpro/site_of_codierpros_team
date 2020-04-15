@@ -1,4 +1,4 @@
-body, h1, p, span{
+body, h1, p, ul, li, span{
     margin: 0;
 }
 
@@ -489,44 +489,69 @@ button.h2_scroll_down {
     font-weight: 250;
 }
 
+.footer_left_side h2 {
+    position: relative;
+    height: 0;
+    left: 17%;
+    top: 13.33%;
+    font-weight: 250;
+    font-size: 50px;
+    line-height: 61px;
+    margin: 0;
+}
 
+.footer1_list {
+    position: relative;
+    width: 594px;
+    height: 735px;
+    left: 163px;
+    top: 22.6%;
+    font-size: 40px;
+    line-height: 49px;
+}
 
-.footer_right_side .contacts, .footer_left_side p {
+.footer_right_side .contacts {
     position: relative;
     width: 55%;
     height: 0;
-    left: 16%;
+    left: 14.17%;
     top: 22.6%;
-
     font-size: 40px;
-    line-height: 51px;
+    line-height: 49px;
 }
 
 .footer_logo {
     position: relative;
     width: fit-content;
-    left: 16%;
-    top: 77%;
-    font-size: 100px;
-    line-height: 122px;
-    font-family: Proxima Nova;
-    font-style: normal;
-    font-weight: 250;
-    height: 13.6%;
+    left: 14.17%;
+    top: 77.04%;
+    height: 13.61%;
 }
 
 .footer_logo h1 {
-    position: relative;
     font-size: 100px;
     line-height: 122px;
-    font-family: Proxima Nova;
     font-style: normal;
     font-weight: 250;
+    height: 0;
 }
 
 .footer_logo p {
-    position: relative;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
+    position: relative;
+    top: 74.83%;
+    height: 0;
+
+}
+
+.footer_logo span {
+    position: relative;
+    width: 38.06%;
+    height: 0px;
+    left: 30.97%;
+    top: 100%;
+    display: block;
+    border: 0.5px solid #FF5A5A;
 }
