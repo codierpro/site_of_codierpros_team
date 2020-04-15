@@ -141,87 +141,11 @@ html {
     color: #FFFFFF;
 }
 
-@media screen and (max-width: 1920px) {   
-    .header p {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 1660px) {   
-    .header p {
-        font-size: 22px;
-    }
-}
-
-@media screen and (max-width: 1440px) {   
-    .header p {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 1366px) {   
-    .header p {
-        font-size: 17px;
-    }
-}
-
-@media screen and (max-width: 1281px) {  
-    .header p {
-        font-size: 15px;
-    }
-}
-
-/*******************************************************************************************/
-/*
-@media screen and (max-width: 1920px) {   
-    .header span {
-
-    }
-}
-
-@media screen and (max-width: 1660px) {   
-    .header span {
-        top: 48px;
-        left: 68.3%;
-    }
-}
-
-@media screen and (max-width: 1440px) {   
-    .header span {
-        top: 38px;
-        left: 67%;
-    }
-}
-
-@media screen and (max-width: 1366px) {   
-    .header span {
-        top: 23px;
-        left: 67%;
-    }
-}
-
-@media screen and (max-width: 1281px) {  
-    .header span {
-        top: 3px;
-        left: 66.5%;
-    }
-}
-
-@media screen and (max-width: 1200px) {  
-    .header span {
-        top: 3px;
-        left: 65.5%;
-    }
-}
-
-@media screen and (max-width: 990px) {  
-    .header span {
-        top: 3px;
-        left: 64.5%;
-    }
-}
-*/
-/******************************************************************************************/
+@media screen and (max-width: 1920px) { .header p { font-size: 25px; }}
+@media screen and (max-width: 1660px) { .header p { font-size: 22px; }}
+@media screen and (max-width: 1440px) { .header p { font-size: 20px; }}
+@media screen and (max-width: 1366px) { .header p { font-size: 17px; }}
+@media screen and (max-width: 1281px) { .header p { font-size: 15px; }}
 
 button.head_scroll_down {
     position: absolute;
