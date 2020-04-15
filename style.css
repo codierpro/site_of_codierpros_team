@@ -36,22 +36,59 @@ html {
         background-size: 100%;
     }
 }
-.header h1 {
+
+.header_logo {
     position: relative;
-    left: 62%;
-    top: 111px;
+    width: fit-content;
+    left: 60.94%;
+    top: 10.28%;
+    height: 147px;
+}
+
+@media screen and (max-width: 1920px) { .header_logo { height: 147px; }}
+@media screen and (max-width: 1660px) { .header_logo { height: 147px; }}
+@media screen and (max-width: 1440px) { .header_logo { height: 147px; }}
+@media screen and (max-width: 1366px) { .header_logo { height: 114px; }}
+@media screen and (max-width: 1280px) { .header_logo { height: 105px; }}
+@media screen and (max-width: 959px) { .header_logo { height: 98px; }}
+@media screen and (max-width: 719px) { .header_logo { height: 98px; }}
+
+
+
+
+.header_logo h1 {
+    color: #FFFFFF;
     font-family: Proxima Nova;
-    font-style: normal;
-    font-weight: 250;
     font-size: 100px;
     line-height: 122px;
-    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 250;
+    height: 0;
 }
+
+.header_logo p {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    top: 74.83%;
+    height: 0;
+
+}
+
+.header_logo span {
+    position: relative;
+    width: 38.06%;
+    height: 0px;
+    left: 30.97%;
+    top: 100%;
+    display: block;
+    border: 0.5px solid #FF5A5A;
+}
+
 
 @media screen and (max-width: 1920px) {
     .header h1 {
-        left: 62%;
-        top: 111px;
         font-size: 100px;
         line-height: 122px;
     }
@@ -98,67 +135,47 @@ html {
 }
 
 .header p {
-    position: relative;
-    top: 100px;
-    left: 71%;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 250;
-    font-size: 25px;
-    line-height: 30px;  
     color: #FFFFFF;
 }
 
 @media screen and (max-width: 1920px) {   
     .header p {
-        top: 100px;
         font-size: 25px;
     }
 }
 
 @media screen and (max-width: 1660px) {   
     .header p {
-        top: 54px;
         font-size: 22px;
     }
 }
 
 @media screen and (max-width: 1440px) {   
     .header p {
-        top: 45px;
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 1366px) {   
     .header p {
-        top: 32px;
         font-size: 17px;
     }
 }
 
 @media screen and (max-width: 1281px) {  
     .header p {
-        top: 15px;
         font-size: 15px;
     }
 }
 
 /*******************************************************************************************/
-
-.header span {
-    position: relative;
-    width: 204px;
-    left: 70%;
-    top: 100px;
-    border: 1px solid #FF5A5A;
-    display: inline-block;
-}
-
+/*
 @media screen and (max-width: 1920px) {   
     .header span {
-        top: 96px;
-        left: 69.4%;
+
     }
 }
 
@@ -203,7 +220,7 @@ html {
         left: 64.5%;
     }
 }
-
+*/
 /******************************************************************************************/
 
 button.head_scroll_down {
@@ -348,14 +365,14 @@ button.h2_scroll_down {
 }
 
 @media screen and (min-width: 1920px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 75px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 75px; }
     .main_2 p, .main_3 p {
         font-size: 55px;
         bottom: -6%;
     }
 }  
 @media screen and (max-width: 1920px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 60px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 60px; }
     .main_2 p, .main_3 p {
         font-size: 50px;
         line-height: 60px;
@@ -363,42 +380,42 @@ button.h2_scroll_down {
     }
 }  
 @media screen and (max-width: 1660px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 52px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 52px; }
     .main_2 p, .main_3 p {
         font-size: 42px;
         line-height: 54px;
     }
 }  
 @media screen and (max-width: 1440px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 45px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 45px; }
     .main_2 p, .main_3 p {
         font-size: 35px;
         line-height: 50px;
     }
 }  
 @media screen and (max-width: 1366px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 43px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 43px; }
     .main_2 p, .main_3 p {
         font-size: 33px;
         line-height: 38px;
     }
 }  
 @media screen and (max-width: 1280px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 41px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 41px; }
     .main_2 p, .main_3 p {
         font-size: 31px;
         line-height: 40px;
     }
 }  
 @media screen and (max-width: 959px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 32px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 32px; }
     .main_2 p, .main_3 p {
         font-size: 22px;
         line-height: 35px;
     }
 }  
 @media screen and (max-width: 719px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_2 { font-size: 25px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 25px; }
     .main_2 p, .main_3 p {
         font-size: 15px;
         line-height: 30px;
