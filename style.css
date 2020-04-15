@@ -265,14 +265,16 @@ button.h2_scroll_down {
 }
 
 .main_left_side_2 h2, .main_right_side_3 h2{
-    top: 5%;
+    top: 13.89%;
     text-align: center;
     font-family: Proxima Nova;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 73px;
-    margin-bottom: 0;
+    margin: 0;
+    height: 0;
+    position: relative;
 }
 
 
@@ -284,7 +286,7 @@ button.h2_scroll_down {
     line-height: 61px;
     text-align: center;  
     color: #FFFFFF;
-    bottom: 2%;
+    top: 23.15%;
     position: relative;
 }
 
@@ -292,7 +294,6 @@ button.h2_scroll_down {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 75px; }
     .main_2 p, .main_3 p {
         font-size: 55px;
-        bottom: -6%;
     }
 }  
 @media screen and (max-width: 1920px)  {
@@ -300,7 +301,6 @@ button.h2_scroll_down {
     .main_2 p, .main_3 p {
         font-size: 50px;
         line-height: 60px;
-        bottom: -6%;
     }
 }  
 @media screen and (max-width: 1660px)  {
@@ -311,21 +311,21 @@ button.h2_scroll_down {
     }
 }  
 @media screen and (max-width: 1440px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 45px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 51px; }
     .main_2 p, .main_3 p {
         font-size: 35px;
         line-height: 50px;
     }
 }  
 @media screen and (max-width: 1366px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 43px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 50px; }
     .main_2 p, .main_3 p {
         font-size: 33px;
         line-height: 38px;
     }
 }  
 @media screen and (max-width: 1280px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 41px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 49px; }
     .main_2 p, .main_3 p {
         font-size: 31px;
         line-height: 40px;
