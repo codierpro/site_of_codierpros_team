@@ -6,7 +6,7 @@ html {
     width: 100%;
     margin: 0;
     /* overflow: hidden; */
-    background-color: black;
+    background-color: #202020;
 }
 
 @font-face {
@@ -15,14 +15,14 @@ html {
     src: url('fonts/ProximaNovaThin/ProximaNovaT-Thin.ttf') format('truetype');
 }
 
-.header {
+.header, .footer_1, .footer_2{
     background: url(images/header_background.png) no-repeat;  
 }
 
 .smoke {
     background: url(images/smoke1.png) no-repeat;
 }
-.header, .smoke {
+.header, .smoke, .main_2, .main_3, .footer_1, .footer_2 {
     width: 100%;
     height: 100vh;   
 }
@@ -32,7 +32,7 @@ html {
        (min-aspect-ratio: 15/10) and
        (min-aspect-ratio: 15/9) and
        (min-aspect-ratio: 7/4) {
-    .header, .smoke{
+    .header, .smoke, .footer_1, .footer_2{
         background-size: 100%;
     }
 }
@@ -469,4 +469,64 @@ button.h2_scroll_down {
 .main_right_side_3 {
     background: url(images/need_a_website2.png) no-repeat center;
     background-size: cover;
+}
+
+.footer_1 {
+    color: #FFFFFF;
+}
+
+.footer_1 ul {
+    list-style: none;
+}
+
+.footer_left_side, .footer_right_side {
+    width: 50%;
+    float: left;
+    text-align: left;
+    height: 100vh;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 250;
+}
+
+
+
+.footer_right_side .contacts, .footer_left_side p {
+    position: relative;
+    width: 55%;
+    height: 0;
+    left: 16%;
+    top: 22.6%;
+
+    font-size: 40px;
+    line-height: 51px;
+}
+
+.footer_logo {
+    position: relative;
+    width: fit-content;
+    left: 16%;
+    top: 77%;
+    font-size: 100px;
+    line-height: 122px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 250;
+    height: 13.6%;
+}
+
+.footer_logo h1 {
+    position: relative;
+    font-size: 100px;
+    line-height: 122px;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 250;
+}
+
+.footer_logo p {
+    position: relative;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
 }
