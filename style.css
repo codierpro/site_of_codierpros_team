@@ -471,7 +471,7 @@ button.h2_scroll_down {
     background-size: cover;
 }
 
-.footer_1 {
+.footer_1, .footer_2 {
     color: #FFFFFF;
 }
 
@@ -508,6 +508,16 @@ button.h2_scroll_down {
     top: 22.6%;
     font-size: 40px;
     line-height: 49px;
+}
+
+.footer2_list {
+    position: relative;
+    width: 594px;
+    height: 735px;
+    left: 163px;
+    top: 22.6%;
+    font-size: 50px;
+    line-height: 61px;
 }
 
 .footer_right_side .contacts {
