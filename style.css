@@ -26,7 +26,11 @@ html {
     width: 100%;
     height: 100vh;   
 }
-
+@media (min-aspect-ratio: 8/5) { 
+    .header, .smoke, .footer_1, .footer_2 {
+        background-size: cover;
+    }
+}
 @media (min-aspect-ratio: 16/10) and 
        (min-aspect-ratio: 16/9) and
        (min-aspect-ratio: 15/10) and
@@ -39,7 +43,7 @@ html {
 
 .header_logo {
     position: relative;
-    width: fit-content;
+    width: max-content;
     left: 60.94%;
     top: 10.28%;
     height: 147px;
@@ -290,10 +294,109 @@ button.h2_scroll_down {
     position: relative;
 }
 
+.footer_1, .footer_2 {
+    color: #FFFFFF;
+}
+
+.footer_1 ul {
+    list-style: none;
+}
+
+.footer_left_side, .footer_right_side {
+    width: 50%;
+    float: left;
+    text-align: left;
+    height: 100vh;
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: 250;
+}
+
+.footer_left_side h2 {
+    position: relative;
+    height: 0;
+    left: 17%;
+    top: 13.33%;
+    font-weight: 250;
+    font-size: 50px;
+    line-height: 61px;
+    margin: 0;
+}
+
+.footer1_list {
+    position: relative;
+    width: 594px;
+    height: 735px;
+    left: 163px;
+    top: 22.6%;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.footer2_list {
+    position: relative;
+    width: 594px;
+    height: 735px;
+    left: 163px;
+    top: 22.6%;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.footer_right_side .contacts {
+    position: relative;
+    width: 55%;
+    height: 0;
+    left: 14.17%;
+    top: 22.6%;
+    /* font-size: 40px;
+    line-height: 49px; */
+}
+
+.footer_logo {
+    position: relative;
+    width: max-content;
+    left: 14.17%;
+    top: 77.04%;
+    height: 13.61%;
+}
+
+.footer_logo h1 {
+    font-size: 100px;
+    line-height: 122px;
+    font-style: normal;
+    font-weight: 250;
+    height: 0;
+}
+
+.footer_logo p {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    top: 74.83%;
+    height: 0;
+
+}
+
+.footer_logo span {
+    position: relative;
+    width: 38.06%;
+    height: 0px;
+    left: 30.97%;
+    top: 100%;
+    display: block;
+    border: 0.5px solid #FF5A5A;
+}
+
 @media screen and (min-width: 1920px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 75px; }
     .main_2 p, .main_3 p {
         font-size: 55px;
+    }
+    .contacts {
+        font-size: 44px;
+        line-height: 54px; 
     }
 }  
 @media screen and (max-width: 1920px)  {
@@ -302,12 +405,36 @@ button.h2_scroll_down {
         font-size: 50px;
         line-height: 60px;
     }
+    .contacts {
+        font-size: 40px;
+        line-height: 49px; 
+    }
 }  
-@media screen and (max-width: 1660px)  {
+
+@media screen and (max-width: 1600px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 52px; }
     .main_2 p, .main_3 p {
         font-size: 42px;
         line-height: 54px;
+    }
+    .contacts {
+        font-size: 33px;
+        line-height: 40px; 
+    }
+    .footer_logo {
+        top: 75.04%;
+    }
+    .footer_logo h1 {
+        font-size: 83px;
+    }
+    .footer_logo p {
+        top: 80.83%;
+        font-size: 25px;
+    }
+    .footer_logo span {
+        top: 112%;
+        width: 41%;
+        left: 29%;
     }
 }  
 @media screen and (max-width: 1440px)  {
@@ -316,26 +443,98 @@ button.h2_scroll_down {
         font-size: 35px;
         line-height: 50px;
     }
+    .contacts {
+        font-size: 30px;
+        line-height: 40px; 
+    }
+    .footer_logo {
+        top: 73.04%;
+    }
+    .footer_logo h1 {
+        font-size: 75px;
+    }
+    .footer_logo p {
+        top: 80.83%;
+        font-size: 25px;
+    }
+    .footer_logo span {
+        top: 112%;
+        width: 45%;
+        left: 27%;
+    }
 }  
 @media screen and (max-width: 1366px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 50px; }
-    .main_2 p, .main_3 p {
+    .main_2 p, .main_3 p, .footer_1 ul{
         font-size: 33px;
         line-height: 38px;
+    }
+    .contacts {
+        font-size: 28px;
+        line-height: 34px; 
+    }
+    .footer_logo {
+        top: 73.04%;
+    }
+    .footer_logo h1 {
+        font-size: 72px;
+    }
+    .footer_logo p {
+        top: 87.83%;
+        font-size: 20px;
+    }
+    .footer_logo span {
+        top: 120%;
     }
 }  
 @media screen and (max-width: 1280px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 49px; }
-    .main_2 p, .main_3 p {
+    .main_2 p, .main_3 p, .footer_1 ul {
         font-size: 31px;
         line-height: 40px;
     }
+    .contacts {
+        font-size: 26px;
+        line-height: 32px; 
+    }
+    .footer_logo {
+        top: 73.04%;
+    }
+    .footer_logo h1 {
+        font-size: 66px;
+    }
+    .footer_logo p {
+        top: 85.83%;
+        font-size: 20px;
+    }
+    .footer_logo span {
+        top: 120%;
+    }
 }  
-@media screen and (max-width: 959px)  {
+@media screen and (max-width: 1024px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 32px; }
     .main_2 p, .main_3 p {
         font-size: 22px;
         line-height: 35px;
+    }
+    .contacts {
+        font-size: 21px;
+        line-height: 32px; 
+    }
+    .footer_logo {
+        top: 73.04%;
+    }
+    .footer_logo h1 {
+        font-size: 45px;
+    }
+    .footer_logo p {
+        top: 78.83%;
+        font-size: 20px;
+    }
+    .footer_logo span {
+        top: 112%;
+        width: 54%;
+        left: 23%;
     }
 }  
 @media screen and (max-width: 719px)  {
@@ -343,6 +542,10 @@ button.h2_scroll_down {
     .main_2 p, .main_3 p {
         font-size: 15px;
         line-height: 30px;
+    }
+    .contacts {
+        font-size: 40px;
+        line-height: 49px; 
     }
 } 
 /****************************************************************************************************/
@@ -411,7 +614,7 @@ button.h2_scroll_down {
     background: url(images/need_a_website2.png) no-repeat center;
     background-size: cover;
 }
-
+/*
 .footer_1, .footer_2 {
     color: #FFFFFF;
 }
@@ -473,7 +676,7 @@ button.h2_scroll_down {
 
 .footer_logo {
     position: relative;
-    width: fit-content;
+    width: max-content;
     left: 14.17%;
     top: 77.04%;
     height: 13.61%;
@@ -506,3 +709,5 @@ button.h2_scroll_down {
     display: block;
     border: 0.5px solid #FF5A5A;
 }
+
+*/
