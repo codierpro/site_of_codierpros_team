@@ -49,7 +49,7 @@
         <div class="main_right_side_2">
             <h2 class="bottom_h2" id="frame2_2">I need a website</h2>
         </div>
-        <button type="button" class="main_2_scroll_up" id="scroll_up"></button>
+        <button type="button" class="main_2_scroll_up" id="scroll_up2"></button>
     </div>  
     <div class="main_3">
         <div class="main_left_side_3">
@@ -70,7 +70,7 @@
                 </p>
             </div>
         </div>
-        <button type="button" class="main_3_scroll_up" id="scroll_up"></button>
+        <button type="button" class="main_3_scroll_up" id="scroll_up3"></button>
     </div>  
 
     <div class="footer_1">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="footer_1_scroll_up" id="scroll_up"></button>
+            <button type="button" class="footer_1_scroll_up" id="scroll_up4"></button>
     </div>
     <div class="footer_2">
         <div class="smoke">
@@ -154,130 +154,10 @@
                 </div>
             </div>
         </div>
-        <button type="button" class="footer_2_scroll_up" id="scroll_up"></button>
+        <button type="button" class="footer_2_scroll_up" id="scroll_up5"></button>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-    <script>
-        (function() {
-            'use strict';
-        
-            var btnScrollDown = document.querySelector('#scroll_down');
-            var aScrollDown1_1 = document.querySelector('#frame1_1');
-            var aScrollDown1_2 = document.querySelector('#frame1_2');
-            var aScrollDown2_2 = document.querySelector('#frame2_2');
-            var aScrollDown3_1 = document.querySelector('#frame3_1');
-            var aScrollDown2_1 = document.querySelector('#frame2_1');
-            var aScrollDown3_2 = document.querySelector('#frame3_2');
-        
-            function scrollDown() {
-                var windowCoords = document.documentElement.clientHeight;
-                
-                (function scroll() {
-                    if (window.pageYOffset < windowCoords) {
-                        window.scrollBy(0, 10);
-                        setTimeout(scroll, 4);
-                    }
-                     if (window.pageYOffset > windowCoords) {
-                         window.scrollTo(0, windowCoords);
-                    }
-                })();
-            };
-            function scrollDown1_1() {
-                var windowCoords1_1 = document.documentElement.clientHeight;
-                windowCoords1_1 *= 2;
-                
-                (function scroll() {
-                    if (window.pageYOffset < windowCoords1_1) {
-                        window.scrollBy(0, 10);
-                        setTimeout(scroll, 4);
-                    }
-                    if (window.pageYOffset > windowCoords1_1) {
-                        window.scrollTo(0, windowCoords1_1);
-                    }
-                })();
-            };
-            function scrollDown1_2() {
-                var windowCoords1_2 = document.documentElement.clientHeight;
-                windowCoords1_2 *= 3;
-                
-                (function scroll() {
-                    if (window.pageYOffset < windowCoords1_2) {
-                        window.scrollBy(0, 15);
-                        setTimeout(scroll, 4);
-                    }
-                    if (window.pageYOffset > windowCoords1_2) {
-                        window.scrollTo(0, windowCoords1_2);
-                    }
-                })();
-            };
-            function scrollDown2_1() {
-                var windowCoords2_1 = document.documentElement.clientHeight;
-                windowCoords2_1 *= 4;
-                
-                (function scroll() {
-                    if (window.pageYOffset < windowCoords2_1) {
-                        window.scrollBy(0, 15);
-                        setTimeout(scroll, 4);
-                    }
-                    if (window.pageYOffset > windowCoords2_1) {
-                        window.scrollTo(0, windowCoords2_1);
-                    }
-                })();
-            };
-            function scrollDown2_2() {
-                var windowCoords2_2 = document.documentElement.clientHeight;
-                windowCoords2_2 *= 3;
-                
-                (function scroll() {
-                    if (window.pageYOffset < windowCoords2_2) {
-                        window.scrollBy(0, 10);
-                        setTimeout(scroll, 4);
-                    }
-                    if (window.pageYOffset > windowCoords2_2) {
-                        window.scrollTo(0, windowCoords2_2);
-                    }
-                })();
-            };
-        
-            function scrollDown3_1() {
-                var windowCoords3_1 = document.documentElement.clientHeight;
-                windowCoords3_1 *= 2;
-                
-                (function scroll() {
-                    if (window.pageYOffset > windowCoords3_1) {
-                        window.scrollBy(0, -10);
-                        setTimeout(scroll, 4);
-                    }
-                    
-                    if (window.pageYOffset < windowCoords3_1) {
-                        window.scrollTo(0, windowCoords3_1);
-                    }
-                })();
-            };
-            function scrollDown3_2() {
-                var windowCoords3_2 = document.documentElement.clientHeight;
-                windowCoords3_2 *= 5;
-                
-                (function scroll() {
-                    if (window.pageYOffset < windowCoords3_2) {
-                        window.scrollBy(0, 15);
-                        setTimeout(scroll, 4);
-                    }
-                    if (window.pageYOffset > windowCoords3_2) {
-                        window.scrollTo(0, windowCoords3_2);
-                    }
-                })();
-            };
-        
-            btnScrollDown.addEventListener('click', scrollDown);
-            aScrollDown1_1.addEventListener('click', scrollDown1_1);
-            aScrollDown1_2.addEventListener('click', scrollDown1_2);
-            aScrollDown2_2.addEventListener('click', scrollDown2_2);
-            aScrollDown3_1.addEventListener('click', scrollDown3_1);
-            aScrollDown2_1.addEventListener('click', scrollDown2_1);
-            aScrollDown3_2.addEventListener('click', scrollDown3_2);
-        })();
-    </script>
+    <script src="js/buttonScript.js"></script>
 </body>
 </html>
