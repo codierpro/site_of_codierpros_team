@@ -9,6 +9,11 @@ html {
     background-color: #202020;
 }
 
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Proxima Nova';
     src: url('fonts/ProximaNovaThin/ProximaNovaT-Thin.eot');
