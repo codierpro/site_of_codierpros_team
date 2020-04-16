@@ -147,7 +147,7 @@ html {
 @media screen and (max-width: 1366px) { .header p { font-size: 17px; }}
 @media screen and (max-width: 1281px) { .header p { font-size: 15px; }}
 
-button.head_scroll_down {
+button {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -155,16 +155,20 @@ button.head_scroll_down {
     right: 0;
     height: 59px;
     width: 59px;
-    top: calc(100vh - 95px);
     background-color: transparent;
     border: solid #FFFFFF; 
     border-width: 0 2px 2px 0;
     cursor: pointer;
     outline: none;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
     display: inline-block;
     padding: 3px;
+    
+}
+
+button.head_scroll_down {
+    top: calc(100vh - 95px);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 button.h2_scroll_down {
@@ -183,6 +187,36 @@ button.h2_scroll_down {
     cursor: pointer;
 }
 
+button.main_scroll_up {
+    top: calc(100vh + 53px);
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
+button.main_2_scroll_up {
+    top: calc(200vh + 53px);
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
+button.main_3_scroll_up {
+    top: calc(300vh + 53px);
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
+button.footer_1_scroll_up {
+    top: calc(500vh - 95px);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+button.footer_2_scroll_up {
+    top: calc(600vh - 95px);
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+}
 
 @media screen and (max-width: 1920px) {
     button.scroll_down {
