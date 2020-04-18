@@ -503,7 +503,7 @@ button.footer_2_scroll_up {
     }
 }  
 @media screen and (max-width: 1366px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 50px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 41px; }
     .main_2 p, .main_3 p, .footer_1 ul{
         font-size: 33px;
         line-height: 38px;
@@ -639,7 +639,7 @@ button.footer_2_scroll_up {
 }
 
 .main_left_side_2 {
-    background: url(images/be_a_member2.png) no-repeat;
+    background: url(images/be_a_member2.png) no-repeat center;
     background-size: cover;
 }
 
@@ -654,7 +654,7 @@ button.footer_2_scroll_up {
     top: 0; bottom: 0; /* Вся высота */
     z-index: -1; /* Фон ниже текста */
     /* Параметры фона */
-    background: url(images/need_a_website_black.png) no-repeat;
+    background: url(images/need_a_website_black.png) no-repeat center;
     background-size: cover;
     filter: blur(5px); /* Размытие */
 }
@@ -670,7 +670,7 @@ button.footer_2_scroll_up {
     top: 0; bottom: 0; /* Вся высота */
     z-index: -1; /* Фон ниже текста */
     /* Параметры фона */
-    background: url(images/be_a_member_black.png) no-repeat;
+    background: url(images/be_a_member_black.png) no-repeat center;
     background-size: cover;
     filter: blur(5px); /* Размытие */
 }
