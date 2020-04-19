@@ -379,7 +379,7 @@ button.footer_2_scroll_up {
     position: relative;
     width: 594px;
     height: 735px;
-    left: 163px;
+    left: 26%;
     top: 22.6%;
     font-size: 40px;
     line-height: 49px;
@@ -389,7 +389,7 @@ button.footer_2_scroll_up {
     position: relative;
     width: 594px;
     height: 735px;
-    left: 163px;
+    left: 26%;
     top: 22.6%;
     font-size: 50px;
     line-height: 61px;
@@ -469,7 +469,7 @@ button.footer_2_scroll_up {
         font-size: 42px;
         line-height: 54px;
     }
-    .contacts, .footer1_list ul {
+    .contacts, .footer1_list ul, .footer1_list p {
         font-size: 33px;
         line-height: 40px; 
     }
@@ -495,7 +495,7 @@ button.footer_2_scroll_up {
         font-size: 35px;
         line-height: 50px;
     }
-    .contacts, .footer1_list ul {
+    .contacts, .footer1_list ul, .footer1_list p {
         font-size: 30px;
         line-height: 40px; 
     }
@@ -516,12 +516,13 @@ button.footer_2_scroll_up {
     }
 }  
 @media screen and (max-width: 1366px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 41px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 39px; }
     .main_2 p, .main_3 p, .footer_1 ul{
         font-size: 33px;
         line-height: 38px;
+        top: 26%;
     }
-    .contacts, .footer1_list ul {
+    .contacts, .footer1_list ul, .footer1_list p, .footer2_list p {
         font-size: 28px;
         line-height: 34px; 
     }
@@ -538,21 +539,24 @@ button.footer_2_scroll_up {
     .footer_logo span {
         top: 120%;
     }
+    .footer_left_side h2 {
+        top: 7%;
+        font-size: 38px;
+        line-height: 54px;
+    }
+    .footer1_list, .footer2_list {
+        top: 22%;
+    }
 } 
 @media screen and (max-aspect-ratio: 4/3) {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 49px; }
-    .main_2 p, .main_3 p, .footer_1 ul {
+    .main_2 p, .main_3 p, .footer_1 ul{
         font-size: 31px;
         line-height: 40px;
     }
-    .contacts, .footer1_list ul {
+    .contacts, .footer1_list ul, .footer1_list p, .footer2_list p  {
         font-size: 26px;
         line-height: 45px; 
-    }
-    
-    .footer2_list p {
-        font-size: 37px;
-        line-height: 55px;
     }
     .footer_logo {
         top: 81%;
@@ -567,6 +571,14 @@ button.footer_2_scroll_up {
     .footer_logo span {
         top: 100%;
     }
+    .footer_left_side h2 {
+        top: 11%;
+        font-size: 38px;
+        line-height: 54px;
+    }
+    .footer1_list, .footer2_list {
+        top: 22%;
+    }
 }  
 
 @media screen and (max-width: 1280px) and (max-height: 900px)  {
@@ -575,13 +587,13 @@ button.footer_2_scroll_up {
         font-size: 31px;
         line-height: 40px;
     }
-    .contacts, .footer1_list ul {
-        font-size: 26px;
-        line-height: 32px; 
+    .contacts, .footer1_list ul, .footer1_list p s{
+        font-size: 24px;
+        line-height: 24px; 
     }
     .footer2_list p {
-        font-size: 30px;
-        line-height: 50px; 
+        font-size: 25px;
+        line-height: 37px;
     }
     .footer_logo {
         top: 73.04%;
@@ -595,6 +607,11 @@ button.footer_2_scroll_up {
     }
     .footer_logo span {
         top: 120%;
+    }
+    .footer_left_side h2 {
+        top: 9%;
+        font-size: 25px;
+        line-height: 53px;
     }
 }  
 @media screen and (max-width: 1024px)  {
@@ -630,8 +647,8 @@ button.footer_2_scroll_up {
         line-height: 30px;
     }
     .contacts {
-        font-size: 40px;
-        line-height: 49px; 
+        font-size: 22px;
+        line-height: 22px;
     }
 } 
 /****************************************************************************************************/
