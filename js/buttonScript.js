@@ -7,7 +7,9 @@
     var aScrollDown2_2 = document.querySelector('#frame2_2');
     var aScrollDown3_1 = document.querySelector('#frame3_1');
     var aScrollDown2_1 = document.querySelector('#frame2_1');
+    var aScrollDown2_1_1 = document.querySelector('#frame2_1_1');
     var aScrollDown3_2 = document.querySelector('#frame3_2');
+    var aScrollDown3_2_1 = document.querySelector('#frame3_2_1');
 
     var btnScrollUp = document.querySelector('#scroll_up');
     var btnScrollUp2 = document.querySelector('#scroll_up2');
@@ -17,42 +19,42 @@
 
     function scrollDown() {
         var windowCoords = document.documentElement.clientHeight;
-        
+       
         (function scroll() {
-            if (window.pageYOffset < windowCoords) {
+            if (Math.ceil(window.pageYOffset) < Math.ceil(windowCoords)) {
                 window.scrollBy(0, 10);
                 setTimeout(scroll, 4);
             }
-             if (window.pageYOffset > windowCoords) {
-                 window.scrollTo(0, windowCoords);
+             if (Math.ceil(window.pageYOffset) > Math.ceil(windowCoords)) {
+                 window.scrollTo(0, Math.ceil(windowCoords));
             }
         })();
     };
     function scrollDown1_1() {
-        var windowCoords1_1 = document.documentElement.clientHeight;
+        var windowCoords1_1 = Math.ceil(document.documentElement.clientHeight);
         windowCoords1_1 *= 2;
         
         (function scroll() {
-            if (window.pageYOffset < windowCoords1_1) {
+            if (Math.ceil(window.pageYOffset) < windowCoords1_1) {
                 window.scrollBy(0, 10);
                 setTimeout(scroll, 4);
             }
-            if (window.pageYOffset > windowCoords1_1) {
+            if (Math.ceil(window.pageYOffset) > windowCoords1_1) {
                 window.scrollTo(0, windowCoords1_1);
             }
         })();
     };
     function scrollDown1_2() {
-        var windowCoords1_2 = document.documentElement.clientHeight;
+        var windowCoords1_2 = Math.ceil(document.documentElement.clientHeight);
         windowCoords1_2 *= 3;
         
         (function scroll() {
-            if (window.pageYOffset < windowCoords1_2) {
+            if (Math.ceil(window.pageYOffset) < Math.ceil(windowCoords1_2)) {
                 window.scrollBy(0, 15);
                 setTimeout(scroll, 4);
             }
-            if (window.pageYOffset > windowCoords1_2) {
-                window.scrollTo(0, windowCoords1_2);
+            if (Math.ceil(window.pageYOffset) > Math.ceil(windowCoords1_2)) {
+                window.scrollTo(0, Math.ceil(windowCoords1_2));
             }
         })();
     };
@@ -70,6 +72,20 @@
             }
         })();
     };
+    function scrollDown2_1_1() {
+        var windowCoords2_1_1 = document.documentElement.clientHeight;
+        windowCoords2_1_1 *= 4;
+        
+        (function scroll() {
+            if (window.pageYOffset < windowCoords2_1_1) {
+                window.scrollBy(0, 15);
+                setTimeout(scroll, 4);
+            }
+            if (window.pageYOffset > windowCoords2_1_1) {
+                window.scrollTo(0, windowCoords2_1_1);
+            }
+        })();
+    };
     function scrollDown2_2() {
         var windowCoords2_2 = document.documentElement.clientHeight;
         windowCoords2_2 *= 3;
@@ -79,7 +95,7 @@
                 window.scrollBy(0, 10);
                 setTimeout(scroll, 4);
             }
-            if (window.pageYOffset > windowCoords2_2) {
+            if (Math.round(window.pageYOffset) > windowCoords2_2) {
                 window.scrollTo(0, windowCoords2_2);
             }
         })();
@@ -113,18 +129,36 @@
             }
         })();
     };
+    function scrollDown3_2_1() {
+        var windowCoords3_2_1 = document.documentElement.clientHeight;
+        windowCoords3_2_1 *= 5;
+        
+        (function scroll() {
+            if (window.pageYOffset < windowCoords3_2_1) {
+                window.scrollBy(0, 15);
+                setTimeout(scroll, 4);
+            }
+            if (window.pageYOffset > windowCoords3_2_1) {
+                window.scrollTo(0, windowCoords3_2_1);
+            }
+        })();
+    };
 
     function scrollUp() {
         var scrollUp = document.documentElement.clientHeight;
         scrollUp *= 0;
         
+        console.log(Math.ceil(scrollUp));
+        var offse = window.pageYOffset;
+        console.log(Math.ceil(offse));
+
         (function scroll() {
-            if (window.pageYOffset > scrollUp) {
+            if (Math.ceil(window.pageYOffset) > Math.ceil(scrollUp)) {
                 window.scrollBy(0, -10);
                 setTimeout(scroll, 4);
             }
-            if (window.pageYOffset < scrollUp) {
-                window.scrollTo(0, scrollUp);
+            if (Math.ceil(window.pageYOffset) < Math.ceil(scrollUp)) {
+                window.scrollTo(0, Math.ceil(scrollUp));
             }
         })();
     };
@@ -191,7 +225,9 @@
     aScrollDown2_2.addEventListener('click', scrollDown2_2);
     aScrollDown3_1.addEventListener('click', scrollDown3_1);
     aScrollDown2_1.addEventListener('click', scrollDown2_1);
+    aScrollDown2_1_1.addEventListener('click', scrollDown2_1_1);
     aScrollDown3_2.addEventListener('click', scrollDown3_2);
+    aScrollDown3_2_1.addEventListener('click', scrollDown3_2_1);
 
     btnScrollUp.addEventListener('click', scrollUp);
     btnScrollUp2.addEventListener('click', scrollUp2);

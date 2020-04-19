@@ -2,9 +2,15 @@ body, h1, p, ul, li, span{
     margin: 0;
 }
 
-html {
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
     width: 100%;
     margin: 0;
+    padding: 0;
     /* overflow: hidden; */
     background-color: #202020;
 }
@@ -62,7 +68,13 @@ a {
 @media screen and (max-width: 959px) { .header_logo { height: 98px; }}
 @media screen and (max-width: 719px) { .header_logo { height: 98px; }}
 
+.delay-0_5s {animation-delay: 500ms;}
+.delay-1_5s {animation-delay: 1500ms;}
 
+#scroll_down, #scroll_up {
+    animation-delay: 2500ms;
+
+}
 
 
 .header_logo h1 {
@@ -331,6 +343,7 @@ button.footer_2_scroll_up {
     color: #FFFFFF;
     top: 23.15%;
     position: relative;
+    cursor: pointer;
 }
 
 .footer_1, .footer_2 {
