@@ -523,14 +523,15 @@ button.footer_2_scroll_up {
         top: 26%;
     }
     .contacts, .footer1_list ul, .footer1_list p, .footer2_list p {
-        font-size: 28px;
-        line-height: 34px; 
+        font-size: 20px;
+        line-height: 30px; 
     }
     .footer_logo {
         top: 73.04%;
+        height: 106px;
     }
     .footer_logo h1 {
-        font-size: 72px;
+        font-size: 65px;
     }
     .footer_logo p {
         top: 87.83%;
