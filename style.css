@@ -763,8 +763,12 @@ button.footer_2_scroll_up {
         line-height: 20px;
     }
 
+    .footer_logo p {
+        top: 29.83%;
+    }
+
     .footer_logo span {
-        top: 132%;
+        top: 55%;
     }
 }
 
@@ -857,6 +861,10 @@ button.footer_2_scroll_up {
 
     .footer_1_scroll_up, .footer_2_scroll_up {
         display: none;
+    }
+
+    .footer_logo {
+        left: 24%;
     }
     
     .footer_logo h1 {
