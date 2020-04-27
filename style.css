@@ -658,6 +658,119 @@ button.footer_2_scroll_up {
         font-size: 22px;
         line-height: 22px;
     }
+}
+
+
+@media screen and (max-width: 414px) {
+     .header_logo h1 {
+        font-size: 50px;
+    }
+
+    .header_logo {
+        left: 19%;
+    }
+
+        .main_left_side, .main_right_side,
+    .main_left_side_2, .main_right_side_2,
+    .main_left_side_3, .main_right_side_3 {
+        float: none;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .main h2, .main_3 #frame3_1{
+        top: 50%;
+    }
+
+    button.head_scroll_down, .main_scroll_up,
+    .main_2_scroll_up, .main_3_scroll_up {
+        height: 45px;
+        width: 45px;
+        padding: 19px;
+    }
+
+    button.main_2_scroll_up {
+        top: calc(200vh + 25px);
+    }
+
+    .main_right_side_2 {
+        display: none;
+    }
+
+    .main_left_side_2 {
+        height: 100vh;
+    }
+
+      .main_left_side_2 {
+        height: 100vh;
+    }
+
+    .main_right_side_3 h2 {
+        top: 1.11%;
+    }
+
+    .main_right_side_3 p {
+        top: 12.15%;
+    }
+
+    .main_2 p {
+        font-size: 20px;
+    }
+
+    .main_3 p {
+        line-height: 25px;
+        font-size: 20px;
+    } 
+    
+    .footer_1 h2, .footer_2 h2 {
+        font-size: 30px;
+        left: 50%;
+        right: 0;
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .footer_left_side, .footer_right_side {
+        float: none;
+        height: 50vh;
+    }
+
+    .footer1_list, .footer2_list {
+        display: none;
+    }
+
+    .footer_right_side p {
+        font-size: 20px;
+        line-height: 23px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer_right_side .contacts {
+        width: 100%;
+        left: 50%;
+        top: -44%; 
+    }
+
+    .footer_1_scroll_up, .footer_2_scroll_up {
+        display: none;
+    }
+
+    .footer_logo {
+        left: 39%;
+    }
+    
+    .footer_logo h1 {
+        line-height: 20px;
+    }
+
+    .footer_logo p {
+        top: 29.83%;
+    }
+
+    .footer_logo span {
+        top: 55%;
+    }
 } 
 
 @media screen and (max-width: 375px) {
