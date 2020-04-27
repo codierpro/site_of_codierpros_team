@@ -647,7 +647,22 @@ button.footer_2_scroll_up {
         width: 54%;
         left: 23%;
     }
-}  
+}
+
+@media screen and (max-width: 768px) {
+    .footer1_list {
+        left: 20%;
+    }
+
+    .footer_right_side {
+        height: 109vh;
+    }
+
+    .footer_right_side .contacts {
+        left: 31.17%
+    }
+}
+
 @media screen and (max-width: 719px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 25px; }
     .main_2 p, .main_3 p {
