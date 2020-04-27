@@ -206,7 +206,7 @@
     };
     function scrollUp5() {
         var scrollUp = document.documentElement.clientHeight;
-        scrollUp *= 4;
+        scrollUp *= 3;
         
         (function scroll() {
             if (window.pageYOffset > scrollUp) {
