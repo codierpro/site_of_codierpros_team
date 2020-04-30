@@ -192,7 +192,7 @@
     };
     function scrollUp4() {
         var scrollUp = document.documentElement.clientHeight;
-        scrollUp *= 3;
+        scrollUp *= 1;
         
         (function scroll() {
             if (window.pageYOffset > scrollUp) {
@@ -206,7 +206,7 @@
     };
     function scrollUp5() {
         var scrollUp = document.documentElement.clientHeight;
-        scrollUp *= 3;
+        scrollUp *= 1;
         
         (function scroll() {
             if (window.pageYOffset > scrollUp) {

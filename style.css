@@ -448,7 +448,7 @@ button.footer_2_scroll_up {
     border: 0.5px solid #FF5A5A;
 }
 
-@media screen and (min-width: 1920px)  {
+/*@media screen and (min-width: 1920px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 75px; }
     .main_2 p, .main_3 p {
         font-size: 55px;
@@ -457,7 +457,7 @@ button.footer_2_scroll_up {
         font-size: 44px;
         line-height: 54px; 
     }
-}  
+}*/  
 @media screen and (max-width: 1920px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 60px; }
     .main_2 p, .main_3 p {
@@ -525,8 +525,8 @@ button.footer_2_scroll_up {
 @media screen and (max-width: 1366px)  {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 39px; }
     .main_2 p, .main_3 p, .footer_1 ul{
-        font-size: 33px;
-        line-height: 38px;
+        font-size: 26px;
+        line-height: 34px;
         top: 26%;
     }
     .contacts, .footer1_list ul, .footer1_list p, .footer2_list p {
@@ -555,7 +555,8 @@ button.footer_2_scroll_up {
     .footer1_list, .footer2_list {
         top: 22%;
     }
-} 
+}
+
 @media screen and (max-aspect-ratio: 4/3) {
     .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 49px; }
     .main_2 p, .main_3 p, .footer_1 ul{
@@ -664,19 +665,25 @@ button.footer_2_scroll_up {
 }
 
 @media screen and (max-width: 719px)  {
-    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1, #frame3_2 { font-size: 25px; }
+    .main h2, .main_2 .bottom_h2, #frame2_1, #frame3_1  { font-size: 25px; }
     .main_2 p, .main_3 p {
         font-size: 15px;
         line-height: 30px;
     }
+    
+    #frame3_2 {
+        font-size: 30px;
+    }
+
     .contacts {
         font-size: 22px;
         line-height: 22px;
     }
 }
 
+/*********************414px(width) for mobile divice***********************/
 
-@media screen and (max-width: 414px) {
+@media (max-width: 414px) {
      .header_logo h1 {
         font-size: 50px;
     }
@@ -720,21 +727,31 @@ button.footer_2_scroll_up {
         height: 100vh;
     }
 
+     .main_left_side_3 {
+        display: none;
+    }
+    
+    .main_right_side_3 {
+        height: 100vh;
+    }
+
     .main_right_side_3 h2 {
-        top: 1.11%;
+        font-size: 29px;
+        top: 18%;
     }
 
     .main_right_side_3 p {
-        top: 12.15%;
+        top: 30%;
     }
 
     .main_2 p {
-        font-size: 20px;
+        font-size: 22px;
+        line-height: 35px;
     }
 
     .main_3 p {
-        line-height: 25px;
-        font-size: 20px;
+        line-height: 37px;
+        font-size: 22px;
     } 
     
     .footer_1 h2, .footer_2 h2 {
@@ -752,6 +769,10 @@ button.footer_2_scroll_up {
 
     .footer1_list, .footer2_list {
         display: none;
+    }
+
+    .footer_left_side h2 {
+        font-size: 30px;
     }
 
     .footer_right_side p {
@@ -772,7 +793,7 @@ button.footer_2_scroll_up {
     }
 
     .footer_logo {
-        left: 39%;
+        left: 42%;
     }
     
     .footer_logo h1 {
@@ -780,7 +801,7 @@ button.footer_2_scroll_up {
     }
 
     .footer_logo p {
-        top: 29.83%;
+        top: 30%;
     }
 
     .footer_logo span {
@@ -788,7 +809,9 @@ button.footer_2_scroll_up {
     }
 } 
 
-@media screen and (max-width: 375px) {
+/*********************375px(width) for mobile divice***********************/
+
+@media (max-width: 375px) {
      .header_logo h1 {
         font-size: 50px;
     }
@@ -832,12 +855,21 @@ button.footer_2_scroll_up {
         height: 100vh;
     }
 
+    .main_left_side_3 {
+        display: none;
+    }
+    
+    .main_right_side_3 {
+        height: 100vh;
+    }
+
     .main_right_side_3 h2 {
-        top: 1.11%;
+        font-size: 29px;
+        top: 18%;
     }
 
     .main_right_side_3 p {
-        top: 12.15%;
+        top: 30%;
     }
 
     .main_2 p {
@@ -845,8 +877,7 @@ button.footer_2_scroll_up {
     }
 
     .main_3 p {
-        line-height: 25px;
-        font-size: 20px;
+        line-height: 32px;
     } 
     
     .footer_1 h2, .footer_2 h2 {
@@ -867,8 +898,8 @@ button.footer_2_scroll_up {
     }
 
     .footer_right_side p {
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 19px;
+        line-height: 25px;
         width: 100%;
         text-align: center;
     }
@@ -876,15 +907,15 @@ button.footer_2_scroll_up {
     .footer_right_side .contacts {
         width: 100%;
         left: 50%;
-        top: -44%; 
+        top: -50%; 
     }
 
-    .footer_1_scroll_up, .footer_2_scroll_up {
+    /*.footer_1_scroll_up, .footer_2_scroll_up {
         display: none;
-    }
+    }*/
 
     .footer_logo {
-        left: 32%;
+        left: 36%;
     }
     
     .footer_logo h1 {
@@ -900,8 +931,9 @@ button.footer_2_scroll_up {
     }
 }
 
+/*********************320px(width) for mobile divice***********************/
 
-@media screen and (max-width: 320px) {
+@media (max-width: 320px) {
     .header_logo h1 {
         font-size: 50px;
     }
@@ -911,8 +943,7 @@ button.footer_2_scroll_up {
     }
 
     .main_left_side, .main_right_side,
-    .main_left_side_2, .main_right_side_2,
-    .main_left_side_3, .main_right_side_3 {
+    .main_right_side_2, .main_left_side_3 {
         float: none;
         width: 100%;
         height: 50vh;
@@ -941,20 +972,25 @@ button.footer_2_scroll_up {
         height: 100vh;
     }
 
-      .main_left_side_2 {
+    .main_left_side_3 {
+        display: none;
+    }
+    
+    .main_right_side_3 {
         height: 100vh;
     }
 
     .main_right_side_3 h2 {
-        top: 1.11%;
+        font-size: 29px;
+        top: 18%;
     }
 
     .main_right_side_3 p {
-        top: 12.15%;
+        top: 30%;
     }
 
     .main_3 p {
-        line-height: 25px;
+        line-height: 32px;
     } 
     
     .footer_1 h2, .footer_2 h2 {
@@ -962,7 +998,7 @@ button.footer_2_scroll_up {
         left: 48%;
         right: 0;
         text-align: center;
-        line-height: 40px;
+        line-height: 33px;
     }
 
     .footer_left_side, .footer_right_side {
@@ -983,13 +1019,13 @@ button.footer_2_scroll_up {
 
     .footer_right_side .contacts {
         width: 100%;
-        left: 48.17%;
-        top: -46%; 
+        left: 49.17%;
+        top: -50%; 
     }
 
-    .footer_1_scroll_up, .footer_2_scroll_up {
+    /*.footer_1_scroll_up, .footer_2_scroll_up {
         display: none;
-    }
+    }*/
 
     .footer_logo {
         left: 24%;
