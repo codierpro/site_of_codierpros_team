@@ -820,12 +820,6 @@ button.footer_2_scroll_up {
     }
 } 
 
-@media (max-width: 375px) and (min-height: 812px) {
-    button.footer_1_scroll_up {
-        top: calc(500vh - 210px);
-    }
-}
-
 /*********************375px(width) for mobile divice***********************/
 
 @media (max-width: 375px) {
@@ -956,6 +950,12 @@ button.footer_2_scroll_up {
 
     .footer_logo span {
         top: 55%;
+    }
+}
+
+@media (min-height: 812px) {
+    button.footer_1_scroll_up {
+        top: calc(500vh - 210px);
     }
 }
 
